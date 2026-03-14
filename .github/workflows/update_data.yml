@@ -1,0 +1,47 @@
+# .github/workflows/update_data.yml
+# Runs daily to fetch fresh data from Hyperliquid API
+
+name: Update Dashboard Data
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC (07:00 WIB)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas lz4
+
+      - name: Run data fetcher
+        env:
+          AMBASSADORS_CSV_URL: ${{ secrets.AMBASSADORS_CSV_URL }}
+          VIPS_CSV_URL: ${{ secrets.VIPS_CSV_URL }}
+          # Future: Add Pear API key when available
+          # PEAR_API_KEY: ${{ secrets.PEAR_API_KEY }}
+        run: |
+          python fetch_data.py
+
+      - name: Commit and push updated data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git diff --staged --quiet || git commit -m "📊 Update dashboard data $(date -u +%Y-%m-%d)"
+          git push
