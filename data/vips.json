@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T03:35:24.443301+00:00",
+  "generated_at": "2026-03-15T10:16:12.167960+00:00",
   "count": 3,
   "data": [
     {
@@ -10,7 +10,7 @@
         "total_fees": 2.5321,
         "total_builder_fees": 1.4109
       },
-      "last_updated": "2026-03-15T03:35:24.439625+00:00"
+      "last_updated": "2026-03-15T10:16:12.167044+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,17 +20,17 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-03-15T03:35:24.439705+00:00"
+      "last_updated": "2026-03-15T10:16:12.167116+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
       "name": "Wilko",
       "pear": {
-        "total_volume": 1319471.98,
-        "total_fees": 1294.4041,
-        "total_builder_fees": 791.6825
+        "total_volume": 1534763.92,
+        "total_fees": 1504.1681,
+        "total_builder_fees": 920.8576
       },
-      "last_updated": "2026-03-15T03:35:24.439991+00:00"
+      "last_updated": "2026-03-15T10:16:12.167167+00:00"
     }
   ]
 }
