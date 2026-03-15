@@ -33,6 +33,9 @@ st.markdown("""
     }
     [data-testid="stSidebarNavItems"] span { color: #FFFFFF !important; }
     
+    /* Hide the "app" label in sidebar nav */
+    [data-testid="stSidebarNavItems"] li:first-child { display: none; }
+    
     /* Metric cards */
     [data-testid="stMetric"] {
         background: linear-gradient(135deg, #F0F7F4 0%, #D8F3DC 100%);
@@ -59,18 +62,6 @@ st.markdown("""
     /* Hide default Streamlit branding */
     #MainMenu { visibility: hidden; }
     footer { visibility: hidden; }
-    
-    /* Status badge */
-    .status-active {
-        background: #D8F3DC; color: #1B4332;
-        padding: 2px 10px; border-radius: 12px;
-        font-size: 0.8em; font-weight: 600;
-    }
-    .status-inactive {
-        background: #FFE3E3; color: #C92A2A;
-        padding: 2px 10px; border-radius: 12px;
-        font-size: 0.8em; font-weight: 600;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -80,19 +71,12 @@ with st.sidebar:
     st.markdown("##### Ambassador and VIP Volume Monitoring Dashboard")
     st.markdown("---")
     st.markdown("""
-    **Pages:**
-    - 🏅 Ambassador — Volume + Referrals
-    - ⭐ VIPs — Volume Tracking
-    
-    ---
-    
     **Data Source:**
-    - Hyperliquid API
-    - Pear Builder Fills
+    - Pear Protocol API
     - Google Sheets (address input)
     
     ---
-    *Updated daily at 07:00 WIB*
+    *Updated daily at 00:00 UTC (07:00 GMT+7)*
     """)
 
 # Landing page
@@ -106,16 +90,14 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown("### 🏅 Ambassador Page")
     st.markdown("""
-    - Notional volume (open & close) via Pear
+    - Notional volume via Pear Protocol
     - Referral volume from reflinks
-    - Referee tracking per ambassador
-    - Daily volume charts
+    - Fee tracking
     """)
 with col2:
     st.markdown("### ⭐ VIPs Page")
     st.markdown("""
-    - Notional volume (open & close) via Pear
-    - Daily volume breakdown
-    - Trade count tracking
-    - Volume trend charts
+    - Notional volume via Pear Protocol
+    - Fee tracking
+    - Volume comparison charts
     """)

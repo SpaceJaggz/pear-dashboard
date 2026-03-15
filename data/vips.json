@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T06:38:07.791817+00:00",
+  "generated_at": "2026-03-15T03:35:24.443301+00:00",
   "count": 3,
   "data": [
     {
@@ -7,73 +7,30 @@
       "name": "Vivid.hl",
       "pear": {
         "total_volume": 2351.54,
-        "volume_24h": 0,
-        "volume_7d": 0,
-        "volume_30d": 2351.54,
-        "total_trades": 13,
         "total_fees": 2.5321,
-        "total_builder_fees": 1.4109,
-        "daily_volumes": {
-          "2026-02-25": 110.41,
-          "2026-02-26": 1111.1,
-          "2026-03-02": 1130.03
-        },
-        "open_volume": 1221.51,
-        "close_volume": 1130.03
+        "total_builder_fees": 1.4109
       },
-      "all_hyperliquid": {
-        "total_volume": 2509.16,
-        "total_trades": 15
-      },
-      "last_updated": "2026-03-14T06:35:26.382408+00:00"
+      "last_updated": "2026-03-15T03:35:24.439625+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
       "name": "Hyperliquidated",
       "pear": {
-        "total_volume": 0,
-        "volume_24h": 0,
-        "volume_7d": 0,
-        "volume_30d": 0,
-        "total_trades": 0,
-        "total_fees": 0,
-        "total_builder_fees": 0,
-        "daily_volumes": {},
-        "open_volume": 0,
-        "close_volume": 0
+        "total_volume": 0.0,
+        "total_fees": 0.0,
+        "total_builder_fees": 0.0
       },
-      "all_hyperliquid": {
-        "total_volume": 399841436.25,
-        "total_trades": 110599
-      },
-      "last_updated": "2026-03-14T06:35:28.901430+00:00"
+      "last_updated": "2026-03-15T03:35:24.439705+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
       "name": "Wilko",
       "pear": {
-        "total_volume": 8068256.34,
-        "volume_24h": 295160.65,
-        "volume_7d": 8068256.34,
-        "volume_30d": 8068256.34,
-        "total_trades": 17124,
-        "total_fees": 2663.4012,
-        "total_builder_fees": 2054.7743,
-        "daily_volumes": {
-          "2026-03-09": 1786246.21,
-          "2026-03-10": 5152639.68,
-          "2026-03-11": 496593.5,
-          "2026-03-12": 337616.29,
-          "2026-03-13": 295160.65
-        },
-        "open_volume": 3490364.46,
-        "close_volume": 3514820.08
+        "total_volume": 1319471.98,
+        "total_fees": 1294.4041,
+        "total_builder_fees": 791.6825
       },
-      "all_hyperliquid": {
-        "total_volume": 8259734.15,
-        "total_trades": 17258
-      },
-      "last_updated": "2026-03-14T06:37:45.403539+00:00"
+      "last_updated": "2026-03-15T03:35:24.439991+00:00"
     }
   ]
 }
