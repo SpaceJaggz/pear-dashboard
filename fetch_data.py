@@ -117,7 +117,7 @@ def fetch_pear_referral(address: str) -> dict:
     url = f"{PEAR_REFERRAL_API}?address={address}"
 
     try:
-        resp = requests.get(url, timeout=30)
+        resp = requests.get(url, timeout=60)
         resp.raise_for_status()
         data = resp.json()
 
