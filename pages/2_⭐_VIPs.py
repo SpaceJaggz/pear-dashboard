@@ -4,7 +4,7 @@ Displays notional volume data for VIP traders on Pear Protocol.
 """
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly.graph_objects as go
 from pathlib import Path
 import sys
 
@@ -78,17 +78,17 @@ for v in vips:
         "Address": short_address(v["address"]),
         "Total Volume ($)": v["pear"]["total_volume"],
         "Fees Paid ($)": v["pear"]["total_fees"],
-        "Builder Fees ($)": v["pear"]["total_builder_fees"],
+        "Fees to Pear ($)": v["pear"]["total_builder_fees"],
     })
 
 df = pd.DataFrame(table_data)
-df.index = df.index + 1  # Start numbering from 1
+df.index = df.index + 1
 
 st.dataframe(
     df.style.format({
         "Total Volume ($)": "${:,.0f}",
         "Fees Paid ($)": "${:,.2f}",
-        "Builder Fees ($)": "${:,.2f}",
+        "Fees to Pear ($)": "${:,.2f}",
     }),
     use_container_width=True,
     height=min(500, 60 + len(vips) * 40),
@@ -99,21 +99,23 @@ st.markdown("---")
 # ─── Volume Comparison ───
 st.markdown("### 📈 Volume Comparison")
 
-fig_bar = px.bar(
-    df.sort_values("Total Volume ($)", ascending=True),
-    x="Total Volume ($)", y="Name",
+df_sorted = df.sort_values("Total Volume ($)", ascending=True)
+fig_bar = go.Figure(go.Bar(
+    x=df_sorted["Total Volume ($)"],
+    y=df_sorted["Name"],
     orientation="h",
-    color="Total Volume ($)",
-    color_continuous_scale=["#FFE8CC", "#E8590C", "#D9480F"],
-    labels={"Total Volume ($)": "Total Pear Volume (USDC)", "Name": ""},
-)
+    marker_color="#E8590C",
+    text=[f"${v:,.0f}" for v in df_sorted["Total Volume ($)"]],
+    textposition="outside",
+    textfont=dict(size=11),
+    hovertemplate="<b>%{y}</b><br>Volume: $%{x:,.0f}<extra></extra>",
+))
 fig_bar.update_layout(
     plot_bgcolor="rgba(0,0,0,0)",
     paper_bgcolor="rgba(0,0,0,0)",
     showlegend=False,
-    coloraxis_showscale=False,
     height=max(300, len(vips) * 50),
-    margin=dict(l=10, r=10, t=10, b=10),
+    margin=dict(l=10, r=120, t=10, b=10),
     xaxis=dict(tickformat="$,.0f"),
 )
 st.plotly_chart(fig_bar, use_container_width=True)

@@ -80,24 +80,23 @@ for a in ambassadors:
     table_data.append({
         "Name": a["name"],
         "Address": short_address(a["address"]),
-        "Ref Code": a.get("refcode", "—") or "—",
         "Total Volume ($)": a["pear"]["total_volume"],
-        "Fees Paid ($)": a["pear"]["total_fees"],
-        "Builder Fees ($)": a["pear"]["total_builder_fees"],
         "Ref Volume ($)": ref.get("total_referral_volume", 0),
         "Referees": ref.get("total_referees", 0),
+        "Fees Paid ($)": a["pear"]["total_fees"],
+        "Fees to Pear ($)": a["pear"]["total_builder_fees"],
     })
 
 df = pd.DataFrame(table_data)
-df.index = df.index + 1  # Start numbering from 1
+df.index = df.index + 1
 
 st.dataframe(
     df.style.format({
         "Total Volume ($)": "${:,.0f}",
-        "Fees Paid ($)": "${:,.2f}",
-        "Builder Fees ($)": "${:,.2f}",
         "Ref Volume ($)": "${:,.0f}",
         "Referees": "{:,}",
+        "Fees Paid ($)": "${:,.2f}",
+        "Fees to Pear ($)": "${:,.2f}",
     }),
     use_container_width=True,
     height=min(500, 60 + len(ambassadors) * 40),
@@ -111,41 +110,45 @@ st.markdown("### 📈 Volume Comparison")
 tab1, tab2 = st.tabs(["Pear Volume", "Referral Volume"])
 
 with tab1:
-    fig = px.bar(
-        df.sort_values("Total Volume ($)", ascending=True),
-        x="Total Volume ($)", y="Name",
+    df_sorted = df.sort_values("Total Volume ($)", ascending=True)
+    fig = go.Figure(go.Bar(
+        x=df_sorted["Total Volume ($)"],
+        y=df_sorted["Name"],
         orientation="h",
-        color="Total Volume ($)",
-        color_continuous_scale=["#B7E4C7", "#2D6A4F", "#1B4332"],
-        labels={"Total Volume ($)": "Notional Volume (USDC)", "Name": ""},
-    )
+        marker_color="#2D6A4F",
+        text=[f"${v:,.0f}" for v in df_sorted["Total Volume ($)"]],
+        textposition="outside",
+        textfont=dict(size=11),
+        hovertemplate="<b>%{y}</b><br>Volume: $%{x:,.0f}<extra></extra>",
+    ))
     fig.update_layout(
         plot_bgcolor="rgba(0,0,0,0)",
         paper_bgcolor="rgba(0,0,0,0)",
         showlegend=False,
-        coloraxis_showscale=False,
         height=max(300, len(ambassadors) * 50),
-        margin=dict(l=10, r=10, t=10, b=10),
+        margin=dict(l=10, r=120, t=10, b=10),
         xaxis=dict(tickformat="$,.0f"),
     )
     st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
-    fig2 = px.bar(
-        df.sort_values("Ref Volume ($)", ascending=True),
-        x="Ref Volume ($)", y="Name",
+    df_sorted2 = df.sort_values("Ref Volume ($)", ascending=True)
+    fig2 = go.Figure(go.Bar(
+        x=df_sorted2["Ref Volume ($)"],
+        y=df_sorted2["Name"],
         orientation="h",
-        color="Ref Volume ($)",
-        color_continuous_scale=["#FFE3E3", "#FF8787", "#C92A2A"],
-        labels={"Ref Volume ($)": "Referral Volume (USDC)", "Name": ""},
-    )
+        marker_color="#C92A2A",
+        text=[f"${v:,.0f}" for v in df_sorted2["Ref Volume ($)"]],
+        textposition="outside",
+        textfont=dict(size=11),
+        hovertemplate="<b>%{y}</b><br>Ref Volume: $%{x:,.0f}<extra></extra>",
+    ))
     fig2.update_layout(
         plot_bgcolor="rgba(0,0,0,0)",
         paper_bgcolor="rgba(0,0,0,0)",
         showlegend=False,
-        coloraxis_showscale=False,
         height=max(300, len(ambassadors) * 50),
-        margin=dict(l=10, r=10, t=10, b=10),
+        margin=dict(l=10, r=120, t=10, b=10),
         xaxis=dict(tickformat="$,.0f"),
     )
     st.plotly_chart(fig2, use_container_width=True)

@@ -1,7 +1,8 @@
 """
-Pear Protocol Dashboard — Data Fetcher v2
-==========================================
+Pear Protocol Dashboard — Data Fetcher v2.1
+============================================
 Uses Pear Protocol's official API for accurate volume data.
+Includes retry logic for referral API timeouts.
 
 API endpoints:
   - Volume:   https://hl-v2.pearprotocol.io/public-stats/address?addresses=0x...
@@ -83,13 +84,12 @@ def fetch_pear_volumes(addresses: list[str]) -> dict:
     if not addresses:
         return {}
 
-    # API supports multiple addresses comma-separated
     addr_str = ",".join(addresses)
     url = f"{PEAR_VOLUME_API}?addresses={addr_str}"
 
     log(f"  Fetching Pear volumes for {len(addresses)} addresses...")
     try:
-        resp = requests.get(url, timeout=30)
+        resp = requests.get(url, timeout=60)
         resp.raise_for_status()
         data = resp.json()
 
@@ -109,39 +109,47 @@ def fetch_pear_volumes(addresses: list[str]) -> dict:
         return {}
 
 
-def fetch_pear_referral(address: str) -> dict:
+def fetch_pear_referral(address: str, retries: int = 3) -> dict:
     """
-    Fetch referral data for a single address.
+    Fetch referral data for a single address with retry on timeout.
     Returns dict with totalReferees, totalVolume (HL + Intent combined).
     """
     url = f"{PEAR_REFERRAL_API}?address={address}"
 
-    try:
-        resp = requests.get(url, timeout=60)
-        resp.raise_for_status()
-        data = resp.json()
+    for attempt in range(retries):
+        try:
+            resp = requests.get(url, timeout=90)
+            resp.raise_for_status()
+            data = resp.json()
 
-        payload = data.get("payload", {})
-        total_referees = int(payload.get("totalReferees", 0))
-        hl_volume = float(payload.get("totalHyperliquidVolume", 0))
-        intent_volume = float(payload.get("totalIntentVolume", 0))
-        total_ref_volume = hl_volume + intent_volume
+            payload = data.get("payload", {})
+            total_referees = int(payload.get("totalReferees", 0))
+            hl_volume = float(payload.get("totalHyperliquidVolume", 0))
+            intent_volume = float(payload.get("totalIntentVolume", 0))
+            total_ref_volume = hl_volume + intent_volume
 
-        return {
-            "total_referees": total_referees,
-            "total_referral_volume": round(total_ref_volume, 2),
-            "hl_referral_volume": round(hl_volume, 2),
-            "intent_referral_volume": round(intent_volume, 2),
-        }
+            return {
+                "total_referees": total_referees,
+                "total_referral_volume": round(total_ref_volume, 2),
+                "hl_referral_volume": round(hl_volume, 2),
+                "intent_referral_volume": round(intent_volume, 2),
+            }
 
-    except Exception as e:
-        log(f"  [ERROR] Pear referral API error for {address}: {e}")
-        return {
-            "total_referees": 0,
-            "total_referral_volume": 0,
-            "hl_referral_volume": 0,
-            "intent_referral_volume": 0,
-        }
+        except Exception as e:
+            if attempt < retries - 1:
+                wait = 5 * (attempt + 1)
+                log(f"    [RETRY] Referral API timeout for {address[:10]}..., waiting {wait}s ({attempt + 1}/{retries})")
+                time.sleep(wait)
+            else:
+                log(f"  [ERROR] Pear referral API failed after {retries} attempts for {address[:10]}...: {e}")
+                return {
+                    "total_referees": 0,
+                    "total_referral_volume": 0,
+                    "hl_referral_volume": 0,
+                    "intent_referral_volume": 0,
+                }
+
+    return {"total_referees": 0, "total_referral_volume": 0, "hl_referral_volume": 0, "intent_referral_volume": 0}
 
 
 # =============================================================================
@@ -159,7 +167,6 @@ def process_ambassadors():
         log("[WARN] No ambassador data found.")
         return []
 
-    # Filter valid addresses
     records = []
     for _, row in df.iterrows():
         address = str(row.get("address", "")).strip()
@@ -184,7 +191,7 @@ def process_ambassadors():
     volumes = fetch_pear_volumes(all_addresses)
     time.sleep(API_DELAY)
 
-    # Fetch referrals per address
+    # Fetch referrals per address (with retry)
     results = []
     for r in records:
         addr_lower = r["address"].lower()
@@ -228,7 +235,6 @@ def process_vips():
         log("[WARN] No VIP data found.")
         return []
 
-    # Filter valid addresses
     records = []
     for _, row in df.iterrows():
         address = str(row.get("address", "")).strip()
@@ -243,7 +249,6 @@ def process_vips():
         log("[WARN] No valid addresses found.")
         return []
 
-    # Fetch volumes in batch
     all_addresses = [r["address"] for r in records]
     volumes = fetch_pear_volumes(all_addresses)
 
@@ -284,7 +289,7 @@ def save_data(data: list, filename: str):
 
 
 def main():
-    log("Pear Protocol Dashboard — Data Fetcher v2")
+    log("Pear Protocol Dashboard — Data Fetcher v2.1")
     log(f"Time: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
     log("Using Pear Protocol API for accurate volume data")
     log("")
