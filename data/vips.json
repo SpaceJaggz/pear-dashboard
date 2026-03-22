@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-22T00:19:48.458192+00:00",
+  "generated_at": "2026-03-22T05:14:51.642236+00:00",
   "count": 3,
   "data": [
     {
@@ -10,7 +10,7 @@
         "total_fees": 2.5321,
         "total_builder_fees": 1.4109
       },
-      "last_updated": "2026-03-22T00:19:48.457962+00:00"
+      "last_updated": "2026-03-22T05:14:51.642026+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,7 +20,7 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-03-22T00:19:48.458000+00:00"
+      "last_updated": "2026-03-22T05:14:51.642060+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -30,7 +30,7 @@
         "total_fees": 4340.7034,
         "total_builder_fees": 2694.391
       },
-      "last_updated": "2026-03-22T00:19:48.458013+00:00"
+      "last_updated": "2026-03-22T05:14:51.642072+00:00"
     }
   ]
 }
