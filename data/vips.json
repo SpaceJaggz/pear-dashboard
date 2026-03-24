@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-24T05:18:52.258994+00:00",
-  "count": 3,
+  "generated_at": "2026-03-24T06:52:27.237865+00:00",
+  "count": 4,
   "data": [
     {
       "address": "0x8954B0745A12E6e01Bc73856D934A784064Baa78",
@@ -10,7 +10,7 @@
         "total_fees": 2.5321,
         "total_builder_fees": 1.4109
       },
-      "last_updated": "2026-03-24T05:18:52.258774+00:00"
+      "last_updated": "2026-03-24T06:52:27.237631+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,7 +20,7 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-03-24T05:18:52.258809+00:00"
+      "last_updated": "2026-03-24T06:52:27.237661+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -30,7 +30,17 @@
         "total_fees": 5207.9713,
         "total_builder_fees": 3259.6449
       },
-      "last_updated": "2026-03-24T05:18:52.258820+00:00"
+      "last_updated": "2026-03-24T06:52:27.237672+00:00"
+    },
+    {
+      "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
+      "name": "Cactus",
+      "pear": {
+        "total_volume": 67196894.53,
+        "total_fees": 65340.5337,
+        "total_builder_fees": 40235.7291
+      },
+      "last_updated": "2026-03-24T06:52:27.237681+00:00"
     }
   ]
 }
