@@ -173,6 +173,12 @@ def process_ambassadors():
         name = str(row.get("name", "Unknown")).strip()
         refcode = str(row.get("refcode", "")).strip()
 
+        # Read referral fee paid from sheet (column E), default 0
+        try:
+            ref_fee = float(row.get("referral fee paid", 0) or 0)
+        except (ValueError, TypeError):
+            ref_fee = 0.0
+
         if not address or address == "nan" or not address.startswith("0x") or len(address) != 42:
             continue
 
@@ -180,6 +186,7 @@ def process_ambassadors():
             "address": address,
             "name": name,
             "refcode": refcode if refcode != "nan" else "",
+            "referral_fee_paid": round(ref_fee, 2),
         })
 
     if not records:
@@ -217,6 +224,7 @@ def process_ambassadors():
             "referral": {
                 "total_referees": ref_data["total_referees"],
                 "total_referral_volume": ref_data["total_referral_volume"],
+                "referral_fee_paid": r["referral_fee_paid"],
             },
             "last_updated": datetime.now(timezone.utc).isoformat(),
         })

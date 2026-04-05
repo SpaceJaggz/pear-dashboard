@@ -83,6 +83,7 @@ for a in ambassadors:
         "Total Volume ($)": a["pear"]["total_volume"],
         "Ref Volume ($)": ref.get("total_referral_volume", 0),
         "Referees": ref.get("total_referees", 0),
+        "Ref Fee Paid ($)": ref.get("referral_fee_paid", 0),
         "Fees Paid ($)": a["pear"]["total_fees"],
         "Fees to Pear ($)": a["pear"]["total_builder_fees"],
     })
@@ -95,6 +96,7 @@ st.dataframe(
         "Total Volume ($)": "${:,.0f}",
         "Ref Volume ($)": "${:,.0f}",
         "Referees": "{:,}",
+        "Ref Fee Paid ($)": "${:,.2f}",
         "Fees Paid ($)": "${:,.2f}",
         "Fees to Pear ($)": "${:,.2f}",
     }),

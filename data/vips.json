@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-21T23:46:13.745472+00:00",
-  "count": 3,
+  "generated_at": "2026-04-05T09:06:23.272029+00:00",
+  "count": 6,
   "data": [
     {
       "address": "0x8954B0745A12E6e01Bc73856D934A784064Baa78",
@@ -10,7 +10,7 @@
         "total_fees": 2.5321,
         "total_builder_fees": 1.4109
       },
-      "last_updated": "2026-03-21T23:46:13.744395+00:00"
+      "last_updated": "2026-04-05T09:06:23.270015+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,17 +20,47 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-03-21T23:46:13.744463+00:00"
+      "last_updated": "2026-04-05T09:06:23.270075+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
       "name": "Wilko",
       "pear": {
-        "total_volume": 4490654.08,
-        "total_fees": 4340.7034,
-        "total_builder_fees": 2694.391
+        "total_volume": 7353067.76,
+        "total_fees": 6737.1375,
+        "total_builder_fees": 4411.8385
       },
-      "last_updated": "2026-03-21T23:46:13.744546+00:00"
+      "last_updated": "2026-04-05T09:06:23.270115+00:00"
+    },
+    {
+      "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
+      "name": "Cactus",
+      "pear": {
+        "total_volume": 77746113.65,
+        "total_fees": 74823.4348,
+        "total_builder_fees": 46565.2549
+      },
+      "last_updated": "2026-04-05T09:06:23.270656+00:00"
+    },
+    {
+      "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
+      "name": "Sendora Fulton/Full Send",
+      "pear": {
+        "total_volume": 41717377.89,
+        "total_fees": 39499.2613,
+        "total_builder_fees": 24303.6822
+      },
+      "last_updated": "2026-04-05T09:06:23.270690+00:00"
+    },
+    {
+      "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
+      "name": "Juan",
+      "pear": {
+        "total_volume": 279654.04,
+        "total_fees": 205.6089,
+        "total_builder_fees": 166.7922
+      },
+      "last_updated": "2026-04-05T09:06:23.270713+00:00"
     }
   ]
 }
