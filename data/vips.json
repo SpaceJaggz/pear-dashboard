@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T10:07:23.260784+00:00",
+  "generated_at": "2026-04-07T10:21:26.228832+00:00",
   "count": 6,
   "data": [
     {
@@ -10,7 +10,7 @@
         "total_fees": 2.5321,
         "total_builder_fees": 1.4109
       },
-      "last_updated": "2026-04-07T10:07:23.260546+00:00"
+      "last_updated": "2026-04-07T10:21:26.228607+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,7 +20,7 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-04-07T10:07:23.260577+00:00"
+      "last_updated": "2026-04-07T10:21:26.228628+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -30,7 +30,7 @@
         "total_fees": 7632.6975,
         "total_builder_fees": 4964.5749
       },
-      "last_updated": "2026-04-07T10:07:23.260588+00:00"
+      "last_updated": "2026-04-07T10:21:26.228639+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
@@ -40,7 +40,7 @@
         "total_fees": 76690.035,
         "total_builder_fees": 47674.7159
       },
-      "last_updated": "2026-04-07T10:07:23.260597+00:00"
+      "last_updated": "2026-04-07T10:21:26.228647+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
@@ -50,7 +50,7 @@
         "total_fees": 39587.7169,
         "total_builder_fees": 24354.2283
       },
-      "last_updated": "2026-04-07T10:07:23.260605+00:00"
+      "last_updated": "2026-04-07T10:21:26.228655+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -60,7 +60,7 @@
         "total_fees": 205.6089,
         "total_builder_fees": 166.7922
       },
-      "last_updated": "2026-04-07T10:07:23.260613+00:00"
+      "last_updated": "2026-04-07T10:21:26.228663+00:00"
     }
   ]
 }
