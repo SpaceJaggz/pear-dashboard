@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T06:20:02.844356+00:00",
+  "generated_at": "2026-04-10T06:51:02.864676+00:00",
   "count": 8,
   "data": [
     {
@@ -10,7 +10,7 @@
         "total_fees": 2.5321,
         "total_builder_fees": 1.4109
       },
-      "last_updated": "2026-04-10T06:20:02.844109+00:00"
+      "last_updated": "2026-04-10T06:51:02.864413+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,17 +20,17 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-04-10T06:20:02.844128+00:00"
+      "last_updated": "2026-04-10T06:51:02.864434+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
       "name": "Wilko",
       "pear": {
-        "total_volume": 8756656.69,
-        "total_fees": 8126.3799,
-        "total_builder_fees": 5253.9912
+        "total_volume": 8804147.09,
+        "total_fees": 8158.5386,
+        "total_builder_fees": 5282.4854
       },
-      "last_updated": "2026-04-10T06:20:02.844138+00:00"
+      "last_updated": "2026-04-10T06:51:02.864444+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
@@ -40,7 +40,7 @@
         "total_fees": 80081.2876,
         "total_builder_fees": 49778.2019
       },
-      "last_updated": "2026-04-10T06:20:02.844147+00:00"
+      "last_updated": "2026-04-10T06:51:02.864452+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
@@ -50,7 +50,7 @@
         "total_fees": 39676.801,
         "total_builder_fees": 24412.9104
       },
-      "last_updated": "2026-04-10T06:20:02.844155+00:00"
+      "last_updated": "2026-04-10T06:51:02.864460+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -60,7 +60,7 @@
         "total_fees": 205.6089,
         "total_builder_fees": 166.7922
       },
-      "last_updated": "2026-04-10T06:20:02.844163+00:00"
+      "last_updated": "2026-04-10T06:51:02.864468+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
@@ -70,7 +70,7 @@
         "total_fees": 3169.1774,
         "total_builder_fees": 1852.4432
       },
-      "last_updated": "2026-04-10T06:20:02.844171+00:00"
+      "last_updated": "2026-04-10T06:51:02.864475+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -80,7 +80,7 @@
         "total_fees": 34.2664,
         "total_builder_fees": 16.6509
       },
-      "last_updated": "2026-04-10T06:20:02.844179+00:00"
+      "last_updated": "2026-04-10T06:51:02.864483+00:00"
     }
   ]
 }
