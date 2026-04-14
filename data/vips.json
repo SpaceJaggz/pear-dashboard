@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T07:25:01.267957+00:00",
+  "generated_at": "2026-04-14T10:01:50.045614+00:00",
   "count": 13,
   "data": [
     {
@@ -10,7 +10,7 @@
         "total_fees": 2.5701,
         "total_builder_fees": 1.4441
       },
-      "last_updated": "2026-04-14T07:25:01.267651+00:00"
+      "last_updated": "2026-04-14T10:01:50.045297+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,7 +20,7 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-04-14T07:25:01.267675+00:00"
+      "last_updated": "2026-04-14T10:01:50.045317+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -30,17 +30,17 @@
         "total_fees": 9285.9483,
         "total_builder_fees": 6049.1071
       },
-      "last_updated": "2026-04-14T07:25:01.267692+00:00"
+      "last_updated": "2026-04-14T10:01:50.045328+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
       "name": "Cactus",
       "pear": {
-        "total_volume": 84633051.34,
-        "total_fees": 81517.3971,
-        "total_builder_fees": 50697.4114
+        "total_volume": 84726448.48,
+        "total_fees": 81607.0581,
+        "total_builder_fees": 50753.4496
       },
-      "last_updated": "2026-04-14T07:25:01.267701+00:00"
+      "last_updated": "2026-04-14T10:01:50.045336+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
@@ -50,7 +50,7 @@
         "total_fees": 40293.6553,
         "total_builder_fees": 24765.3986
       },
-      "last_updated": "2026-04-14T07:25:01.267709+00:00"
+      "last_updated": "2026-04-14T10:01:50.045345+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -60,7 +60,7 @@
         "total_fees": 205.6089,
         "total_builder_fees": 166.7922
       },
-      "last_updated": "2026-04-14T07:25:01.267718+00:00"
+      "last_updated": "2026-04-14T10:01:50.045353+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
@@ -70,7 +70,7 @@
         "total_fees": 3361.862,
         "total_builder_fees": 1976.1623
       },
-      "last_updated": "2026-04-14T07:25:01.267726+00:00"
+      "last_updated": "2026-04-14T10:01:50.045361+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -80,17 +80,17 @@
         "total_fees": 34.2664,
         "total_builder_fees": 16.6509
       },
-      "last_updated": "2026-04-14T07:25:01.267734+00:00"
+      "last_updated": "2026-04-14T10:01:50.045368+00:00"
     },
     {
       "address": "0xc36f2fe0f39a46a45c89bbF92D2531F7D1389062",
       "name": "Col3",
       "pear": {
-        "total_volume": 37092021.46,
-        "total_fees": 35013.3219,
-        "total_builder_fees": 21898.2411
+        "total_volume": 37382015.66,
+        "total_fees": 35273.9842,
+        "total_builder_fees": 22072.2375
       },
-      "last_updated": "2026-04-14T07:25:01.267741+00:00"
+      "last_updated": "2026-04-14T10:01:50.045376+00:00"
     },
     {
       "address": "0x171b7880939d76abbc6b6b2094f54e6636f829a7",
@@ -100,7 +100,7 @@
         "total_fees": 2934.9428,
         "total_builder_fees": 2446.2037
       },
-      "last_updated": "2026-04-14T07:25:01.267749+00:00"
+      "last_updated": "2026-04-14T10:01:50.045384+00:00"
     },
     {
       "address": "0x82590d058ddb9b6d81cea05f0c500e981755bb0b",
@@ -110,7 +110,7 @@
         "total_fees": 188.5832,
         "total_builder_fees": 107.7618
       },
-      "last_updated": "2026-04-14T07:25:01.267757+00:00"
+      "last_updated": "2026-04-14T10:01:50.045392+00:00"
     },
     {
       "address": "0x1bc73b7556a79a3e6ee1a09044cb593b7663349b",
@@ -120,17 +120,17 @@
         "total_fees": 2007.1368,
         "total_builder_fees": 1426.5682
       },
-      "last_updated": "2026-04-14T07:25:01.267764+00:00"
+      "last_updated": "2026-04-14T10:01:50.045400+00:00"
     },
     {
       "address": "0x955dfb921c6e481bf26225282720dba9196c3441",
       "name": "New Whale 3",
       "pear": {
-        "total_volume": 3732837.99,
-        "total_fees": 3855.8496,
-        "total_builder_fees": 2239.688
+        "total_volume": 4038353.14,
+        "total_fees": 4168.5858,
+        "total_builder_fees": 2422.997
       },
-      "last_updated": "2026-04-14T07:25:01.267772+00:00"
+      "last_updated": "2026-04-14T10:01:50.045409+00:00"
     }
   ]
 }
