@@ -80,36 +80,50 @@ def fetch_pear_volumes(addresses: list[str]) -> dict:
     """
     Fetch volume data for multiple addresses in one call.
     Returns dict: {address: {totalVolume, totalExternalFeePaid, totalBuilderFeePaid}}
+    Batches requests in groups of 10 (API limit).
     """
     if not addresses:
         return {}
 
-    addr_str = ",".join(addresses)
-    url = f"{PEAR_VOLUME_API}?addresses={addr_str}"
+    BATCH_SIZE = 10
+    result = {}
 
-    log(f"  Fetching Pear volumes for {len(addresses)} addresses...")
-    try:
-        resp = requests.get(url, timeout=60)
-        resp.raise_for_status()
-        data = resp.json()
+    log(f"  Fetching Pear volumes for {len(addresses)} addresses (batched by {BATCH_SIZE})...")
 
-        result = {}
-        for item in data.get("data", []):
-            addr = item.get("address", "").lower()
-            result[addr] = {
-                "total_volume": float(item.get("totalVolume", 0)),
-                "total_fees": float(item.get("totalExternalFeePaid", 0)),
-                "total_builder_fees": float(item.get("totalBuilderFeePaid", 0)),
-            }
-        log(f"  Got volume data for {len(result)} addresses")
-        return result
+    for i in range(0, len(addresses), BATCH_SIZE):
+        batch = addresses[i:i + BATCH_SIZE]
+        addr_str = ",".join(batch)
+        url = f"{PEAR_VOLUME_API}?addresses={addr_str}"
 
-    except Exception as e:
-        log(f"  [ERROR] Pear volume API error: {e}")
-        return {}
+        batch_num = (i // BATCH_SIZE) + 1
+        total_batches = (len(addresses) + BATCH_SIZE - 1) // BATCH_SIZE
+
+        try:
+            resp = requests.get(url, timeout=60)
+            resp.raise_for_status()
+            data = resp.json()
+
+            for item in data.get("data", []):
+                addr = item.get("address", "").lower()
+                result[addr] = {
+                    "total_volume": float(item.get("totalVolume", 0)),
+                    "total_fees": float(item.get("totalExternalFeePaid", 0)),
+                    "total_builder_fees": float(item.get("totalBuilderFeePaid", 0)),
+                }
+            log(f"    Batch {batch_num}/{total_batches}: got {len(batch)} addresses")
+
+        except Exception as e:
+            log(f"    [ERROR] Batch {batch_num}/{total_batches} failed: {e}")
+
+        # Small delay between batches to avoid rate limits
+        if i + BATCH_SIZE < len(addresses):
+            time.sleep(1.0)
+
+    log(f"  Got volume data for {len(result)} addresses total")
+    return result
 
 
-def fetch_pear_referral(address: str, retries: int = 3) -> dict:
+def fetch_pear_referral(address: str, retries: int = 4) -> dict:
     """
     Fetch referral data for a single address with retry on timeout.
     Returns dict with totalReferees, totalVolume (HL + Intent combined).
@@ -118,7 +132,7 @@ def fetch_pear_referral(address: str, retries: int = 3) -> dict:
 
     for attempt in range(retries):
         try:
-            resp = requests.get(url, timeout=90)
+            resp = requests.get(url, timeout=120)
             resp.raise_for_status()
             data = resp.json()
 
@@ -137,7 +151,7 @@ def fetch_pear_referral(address: str, retries: int = 3) -> dict:
 
         except Exception as e:
             if attempt < retries - 1:
-                wait = 5 * (attempt + 1)
+                wait = 10 * (attempt + 1)
                 log(f"    [RETRY] Referral API timeout for {address[:10]}..., waiting {wait}s ({attempt + 1}/{retries})")
                 time.sleep(wait)
             else:
