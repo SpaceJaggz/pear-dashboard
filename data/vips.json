@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-21T01:22:37.057890+00:00",
-  "count": 13,
+  "generated_at": "2026-04-21T02:50:44.232346+00:00",
+  "count": 14,
   "data": [
     {
       "address": "0x8954B0745A12E6e01Bc73856D934A784064Baa78",
@@ -10,7 +10,7 @@
         "total_fees": 2.5701,
         "total_builder_fees": 1.4441
       },
-      "last_updated": "2026-04-21T01:22:37.057610+00:00"
+      "last_updated": "2026-04-21T02:50:44.232052+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,7 +20,7 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-04-21T01:22:37.057628+00:00"
+      "last_updated": "2026-04-21T02:50:44.232072+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -30,7 +30,7 @@
         "total_fees": 9338.3518,
         "total_builder_fees": 6073.1314
       },
-      "last_updated": "2026-04-21T01:22:37.057639+00:00"
+      "last_updated": "2026-04-21T02:50:44.232083+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
@@ -40,17 +40,17 @@
         "total_fees": 87986.742,
         "total_builder_fees": 54844.437
       },
-      "last_updated": "2026-04-21T01:22:37.057647+00:00"
+      "last_updated": "2026-04-21T02:50:44.232091+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
       "name": "Sendora Fulton/Full Send",
       "pear": {
-        "total_volume": 43745224.78,
-        "total_fees": 41386.6774,
-        "total_builder_fees": 25520.3889
+        "total_volume": 43765228.73,
+        "total_fees": 41400.4801,
+        "total_builder_fees": 25532.3912
       },
-      "last_updated": "2026-04-21T01:22:37.057655+00:00"
+      "last_updated": "2026-04-21T02:50:44.232100+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -60,7 +60,7 @@
         "total_fees": 205.6089,
         "total_builder_fees": 166.7922
       },
-      "last_updated": "2026-04-21T01:22:37.057663+00:00"
+      "last_updated": "2026-04-21T02:50:44.232108+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
@@ -70,7 +70,7 @@
         "total_fees": 3782.4402,
         "total_builder_fees": 2224.2749
       },
-      "last_updated": "2026-04-21T01:22:37.057671+00:00"
+      "last_updated": "2026-04-21T02:50:44.232116+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -80,7 +80,7 @@
         "total_fees": 50.0179,
         "total_builder_fees": 22.9516
       },
-      "last_updated": "2026-04-21T01:22:37.057679+00:00"
+      "last_updated": "2026-04-21T02:50:44.232123+00:00"
     },
     {
       "address": "0xc36f2fe0f39a46a45c89bbF92D2531F7D1389062",
@@ -90,7 +90,7 @@
         "total_fees": 39514.7152,
         "total_builder_fees": 24750.1488
       },
-      "last_updated": "2026-04-21T01:22:37.057686+00:00"
+      "last_updated": "2026-04-21T02:50:44.232131+00:00"
     },
     {
       "address": "0x171b7880939d76abbc6b6b2094f54e6636f829a7",
@@ -100,7 +100,7 @@
         "total_fees": 2934.9428,
         "total_builder_fees": 2446.2037
       },
-      "last_updated": "2026-04-21T01:22:37.057694+00:00"
+      "last_updated": "2026-04-21T02:50:44.232139+00:00"
     },
     {
       "address": "0x82590d058ddb9b6d81cea05f0c500e981755bb0b",
@@ -110,7 +110,7 @@
         "total_fees": 188.5832,
         "total_builder_fees": 107.7618
       },
-      "last_updated": "2026-04-21T01:22:37.057702+00:00"
+      "last_updated": "2026-04-21T02:50:44.232147+00:00"
     },
     {
       "address": "0x1bc73b7556a79a3e6ee1a09044cb593b7663349b",
@@ -120,7 +120,7 @@
         "total_fees": 2007.1368,
         "total_builder_fees": 1426.5682
       },
-      "last_updated": "2026-04-21T01:22:37.057710+00:00"
+      "last_updated": "2026-04-21T02:50:44.232154+00:00"
     },
     {
       "address": "0x955dfb921c6e481bf26225282720dba9196c3441",
@@ -130,7 +130,17 @@
         "total_fees": 5250.5551,
         "total_builder_fees": 3049.3113
       },
-      "last_updated": "2026-04-21T01:22:37.057717+00:00"
+      "last_updated": "2026-04-21T02:50:44.232162+00:00"
+    },
+    {
+      "address": "0x8be269D1F0731e7c2990558d2AF0D8A4A99D0eC4",
+      "name": "Thinker",
+      "pear": {
+        "total_volume": 215217.68,
+        "total_fees": 225.9784,
+        "total_builder_fees": 129.1305
+      },
+      "last_updated": "2026-04-21T02:50:44.232169+00:00"
     }
   ]
 }
