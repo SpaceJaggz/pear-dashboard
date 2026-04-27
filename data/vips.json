@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T01:28:17.728191+00:00",
+  "generated_at": "2026-04-27T01:29:01.510830+00:00",
   "count": 15,
   "data": [
     {
@@ -10,7 +10,7 @@
         "total_fees": 2.5701,
         "total_builder_fees": 1.4441
       },
-      "last_updated": "2026-04-26T01:28:17.727874+00:00"
+      "last_updated": "2026-04-27T01:29:01.510528+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -20,7 +20,7 @@
         "total_fees": 0.0,
         "total_builder_fees": 0.0
       },
-      "last_updated": "2026-04-26T01:28:17.727906+00:00"
+      "last_updated": "2026-04-27T01:29:01.510548+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -30,17 +30,17 @@
         "total_fees": 9389.3154,
         "total_builder_fees": 6111.2324
       },
-      "last_updated": "2026-04-26T01:28:17.727916+00:00"
+      "last_updated": "2026-04-27T01:29:01.510558+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
       "name": "Cactus",
       "pear": {
-        "total_volume": 96331569.83,
-        "total_fees": 92485.3909,
-        "total_builder_fees": 57716.5159
+        "total_volume": 97054029.35,
+        "total_fees": 93205.8944,
+        "total_builder_fees": 58149.9914
       },
-      "last_updated": "2026-04-26T01:28:17.727925+00:00"
+      "last_updated": "2026-04-27T01:29:01.510567+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
@@ -50,7 +50,7 @@
         "total_fees": 42307.9472,
         "total_builder_fees": 26088.2772
       },
-      "last_updated": "2026-04-26T01:28:17.727933+00:00"
+      "last_updated": "2026-04-27T01:29:01.510575+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -60,17 +60,17 @@
         "total_fees": 205.6089,
         "total_builder_fees": 166.7922
       },
-      "last_updated": "2026-04-26T01:28:17.727941+00:00"
+      "last_updated": "2026-04-27T01:29:01.510583+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
       "name": "Wilko Ref 1",
       "pear": {
-        "total_volume": 3950734.46,
-        "total_fees": 3992.506,
-        "total_builder_fees": 2350.8497
+        "total_volume": 3953690.99,
+        "total_fees": 3995.4933,
+        "total_builder_fees": 2352.6236
       },
-      "last_updated": "2026-04-26T01:28:17.727949+00:00"
+      "last_updated": "2026-04-27T01:29:01.510591+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -80,17 +80,17 @@
         "total_fees": 50.0179,
         "total_builder_fees": 22.9516
       },
-      "last_updated": "2026-04-26T01:28:17.727956+00:00"
+      "last_updated": "2026-04-27T01:29:01.510599+00:00"
     },
     {
       "address": "0xc36f2fe0f39a46a45c89bbF92D2531F7D1389062",
       "name": "Col3",
       "pear": {
-        "total_volume": 43466167.34,
-        "total_fees": 40952.814,
-        "total_builder_fees": 25722.7274
+        "total_volume": 43476180.97,
+        "total_fees": 40959.5431,
+        "total_builder_fees": 25728.7355
       },
-      "last_updated": "2026-04-26T01:28:17.727964+00:00"
+      "last_updated": "2026-04-27T01:29:01.510607+00:00"
     },
     {
       "address": "0x171b7880939d76abbc6b6b2094f54e6636f829a7",
@@ -100,7 +100,7 @@
         "total_fees": 2934.9428,
         "total_builder_fees": 2446.2037
       },
-      "last_updated": "2026-04-26T01:28:17.727972+00:00"
+      "last_updated": "2026-04-27T01:29:01.510615+00:00"
     },
     {
       "address": "0x82590d058ddb9b6d81cea05f0c500e981755bb0b",
@@ -110,7 +110,7 @@
         "total_fees": 188.5832,
         "total_builder_fees": 107.7618
       },
-      "last_updated": "2026-04-26T01:28:17.727979+00:00"
+      "last_updated": "2026-04-27T01:29:01.510623+00:00"
     },
     {
       "address": "0x1bc73b7556a79a3e6ee1a09044cb593b7663349b",
@@ -120,7 +120,7 @@
         "total_fees": 2007.1368,
         "total_builder_fees": 1426.5682
       },
-      "last_updated": "2026-04-26T01:28:17.727986+00:00"
+      "last_updated": "2026-04-27T01:29:01.510631+00:00"
     },
     {
       "address": "0x955dfb921c6e481bf26225282720dba9196c3441",
@@ -130,17 +130,17 @@
         "total_fees": 5250.5551,
         "total_builder_fees": 3049.3113
       },
-      "last_updated": "2026-04-26T01:28:17.727993+00:00"
+      "last_updated": "2026-04-27T01:29:01.510648+00:00"
     },
     {
       "address": "0x8be269D1F0731e7c2990558d2AF0D8A4A99D0eC4",
       "name": "Thinker",
       "pear": {
-        "total_volume": 215217.68,
-        "total_fees": 225.9784,
-        "total_builder_fees": 129.1305
+        "total_volume": 310034.5,
+        "total_fees": 323.8293,
+        "total_builder_fees": 186.0206
       },
-      "last_updated": "2026-04-26T01:28:17.728000+00:00"
+      "last_updated": "2026-04-27T01:29:01.510655+00:00"
     },
     {
       "address": "0x6ee5aee6c8148285f4d156b5b5732659c6f7bb4c",
@@ -150,7 +150,7 @@
         "total_fees": 10257.5688,
         "total_builder_fees": 5993.5865
       },
-      "last_updated": "2026-04-26T01:28:17.728018+00:00"
+      "last_updated": "2026-04-27T01:29:01.510662+00:00"
     }
   ]
 }
