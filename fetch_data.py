@@ -1,8 +1,8 @@
 """
-Pear Protocol Dashboard — Data Fetcher v2.1
+Pear Protocol Dashboard — Data Fetcher v2.2
 ============================================
 Uses Pear Protocol's official API for accurate volume data.
-Includes retry logic for referral API timeouts.
+Includes retry logic for referral API timeouts and partial response detection.
 
 API endpoints:
   - Volume:   https://hl-v2.pearprotocol.io/public-stats/address?addresses=0x...
@@ -123,24 +123,38 @@ def fetch_pear_volumes(addresses: list[str]) -> dict:
     return result
 
 
-def fetch_pear_referral(address: str, retries: int = 4) -> dict:
+def fetch_pear_referral(address: str, retries: int = 5) -> dict:
     """
-    Fetch referral data for a single address with retry on timeout.
+    Fetch referral data for a single address with retry on timeout or partial response.
+
+    Partial response detection:
+      - If payload is missing or malformed → retry
+      - If totalReferees > 0 but total volume = 0 → partial data, retry
+      - If totalReferees = 0 and volume = 0 → valid (no referral activity yet)
+
     Returns dict with totalReferees, totalVolume (HL + Intent combined).
     """
     url = f"{PEAR_REFERRAL_API}?address={address}"
 
     for attempt in range(retries):
         try:
-            resp = requests.get(url, timeout=120)
+            resp = requests.get(url, timeout=180)
             resp.raise_for_status()
             data = resp.json()
 
-            payload = data.get("payload", {})
+            # Validate payload structure
+            payload = data.get("payload", None)
+            if payload is None or not isinstance(payload, dict):
+                raise ValueError("Empty or malformed payload")
+
             total_referees = int(payload.get("totalReferees", 0))
             hl_volume = float(payload.get("totalHyperliquidVolume", 0))
             intent_volume = float(payload.get("totalIntentVolume", 0))
             total_ref_volume = hl_volume + intent_volume
+
+            # Detect partial response: has referees but volume is 0
+            if total_referees > 0 and total_ref_volume == 0:
+                raise ValueError(f"Partial data detected: {total_referees} referees but volume=0")
 
             return {
                 "total_referees": total_referees,
@@ -151,8 +165,8 @@ def fetch_pear_referral(address: str, retries: int = 4) -> dict:
 
         except Exception as e:
             if attempt < retries - 1:
-                wait = 10 * (attempt + 1)
-                log(f"    [RETRY] Referral API timeout for {address[:10]}..., waiting {wait}s ({attempt + 1}/{retries})")
+                wait = 15 * (attempt + 1)
+                log(f"    [RETRY] Referral API issue for {address[:10]}... — {e} — waiting {wait}s ({attempt + 1}/{retries})")
                 time.sleep(wait)
             else:
                 log(f"  [ERROR] Pear referral API failed after {retries} attempts for {address[:10]}...: {e}")
@@ -212,7 +226,7 @@ def process_ambassadors():
     volumes = fetch_pear_volumes(all_addresses)
     time.sleep(API_DELAY)
 
-    # Fetch referrals per address (with retry)
+    # Fetch referrals per address (with retry and partial detection)
     results = []
     for r in records:
         addr_lower = r["address"].lower()
@@ -311,7 +325,7 @@ def save_data(data: list, filename: str):
 
 
 def main():
-    log("Pear Protocol Dashboard — Data Fetcher v2.1")
+    log("Pear Protocol Dashboard — Data Fetcher v2.2")
     log(f"Time: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
     log("Using Pear Protocol API for accurate volume data")
     log("")
