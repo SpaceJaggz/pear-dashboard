@@ -79,6 +79,7 @@ for v in vips:
         "Total Volume ($)": v["pear"]["total_volume"],
         "Fees Paid ($)": v["pear"]["total_fees"],
         "Fees to Pear ($)": v["pear"]["total_builder_fees"],
+        "Rebates Paid ($)": v.get("rebates_paid", 0),
     })
 
 df = pd.DataFrame(table_data)
@@ -89,6 +90,7 @@ st.dataframe(
         "Total Volume ($)": "${:,.0f}",
         "Fees Paid ($)": "${:,.2f}",
         "Fees to Pear ($)": "${:,.2f}",
+        "Rebates Paid ($)": "${:,.2f}",
     }),
     use_container_width=True,
     height=min(500, 60 + len(vips) * 40),
