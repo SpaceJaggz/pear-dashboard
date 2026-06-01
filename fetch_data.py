@@ -45,6 +45,23 @@ DATA_DIR = Path(__file__).parent / "data"
 # Rate limit delay between API calls (seconds)
 API_DELAY = 1.0
 
+# =============================================================================
+# KNOWN MINIMUM REFERRAL VOLUMES
+# Addresses known to have significant referral volume.
+# If fetched volume is below the floor, treat as partial and retry.
+# Update these values periodically as volumes grow.
+# All addresses stored in lowercase for comparison.
+# =============================================================================
+
+REFERRAL_MINIMUMS = {
+    "0x6334546f6d6079d6276c8124389decf4c7a26d12": 48649500,
+    "0xb9cdeeb253a659bec27122c7a6e4789b7cc418d7": 23308069,
+    "0x323ed112757f8ef800afc63d0c47419cbf276268": 34529900,
+    "0xa44e8b9522a5f710e2b63ab790465af2f155b632": 14172700,
+    "0x5bef93fbe182ece9776f255b05005b81305f90bf": 4688499,
+    "0x337959a0a270493d2d596bdf1edeb8a9643be996": 618100,
+}
+
 
 def log(msg: str):
     ts = datetime.now().strftime("%H:%M:%S")
@@ -123,24 +140,50 @@ def fetch_pear_volumes(addresses: list[str]) -> dict:
     return result
 
 
-def fetch_pear_referral(address: str, retries: int = 4) -> dict:
+def fetch_pear_referral(address: str, retries: int = 3) -> dict:
     """
-    Fetch referral data for a single address with retry on timeout.
+    Fetch referral data for a single address with retry on timeout or partial response.
+
+    Partial response detection:
+      - If payload is missing or malformed → retry
+      - If totalReferees > 0 but total volume = 0 → partial data, retry
+      - If totalReferees = 0 and volume = 0 → valid (no referral activity yet)
+      - If address is in REFERRAL_MINIMUMS and volume is below floor → partial, retry
+
+    Retry strategy: 3 attempts, with 30s / 60s delays between attempts.
+    Timeout per request: 45 seconds.
+
     Returns dict with totalReferees, totalVolume (HL + Intent combined).
     """
     url = f"{PEAR_REFERRAL_API}?address={address}"
+    addr_lower = address.lower()
+    min_vol = REFERRAL_MINIMUMS.get(addr_lower)
 
     for attempt in range(retries):
         try:
-            resp = requests.get(url, timeout=120)
+            resp = requests.get(url, timeout=45)
             resp.raise_for_status()
             data = resp.json()
 
-            payload = data.get("payload", {})
+            # Validate payload structure
+            payload = data.get("payload", None)
+            if payload is None or not isinstance(payload, dict):
+                raise ValueError("Empty or malformed payload")
+
             total_referees = int(payload.get("totalReferees", 0))
             hl_volume = float(payload.get("totalHyperliquidVolume", 0))
             intent_volume = float(payload.get("totalIntentVolume", 0))
             total_ref_volume = hl_volume + intent_volume
+
+            # Detect partial response: has referees but volume is 0
+            if total_referees > 0 and total_ref_volume == 0:
+                raise ValueError(f"Partial data: {total_referees} referees but volume=0")
+
+            # Detect partial response: known address below minimum threshold
+            if min_vol and total_ref_volume < min_vol:
+                raise ValueError(
+                    f"Below minimum threshold: got {total_ref_volume:,.0f}, expected >= {min_vol:,.0f}"
+                )
 
             return {
                 "total_referees": total_referees,
@@ -151,11 +194,11 @@ def fetch_pear_referral(address: str, retries: int = 4) -> dict:
 
         except Exception as e:
             if attempt < retries - 1:
-                wait = 10 * (attempt + 1)
-                log(f"    [RETRY] Referral API timeout for {address[:10]}..., waiting {wait}s ({attempt + 1}/{retries})")
+                wait = 30 * (attempt + 1)  # 30s, 60s
+                log(f"    [RETRY] Referral issue for {address[:10]}... — {e} — waiting {wait}s ({attempt + 1}/{retries})")
                 time.sleep(wait)
             else:
-                log(f"  [ERROR] Pear referral API failed after {retries} attempts for {address[:10]}...: {e}")
+                log(f"  [ERROR] Referral API failed after {retries} attempts for {address[:10]}...: {e}")
                 return {
                     "total_referees": 0,
                     "total_referral_volume": 0,
