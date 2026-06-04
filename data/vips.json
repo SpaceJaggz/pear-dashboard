@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T02:36:05.286559+00:00",
+  "generated_at": "2026-06-04T03:02:35.162380+00:00",
   "count": 25,
   "data": [
     {
@@ -11,7 +11,7 @@
         "total_builder_fees": 1.4441
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286166+00:00"
+      "last_updated": "2026-06-04T03:02:35.161969+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -22,7 +22,7 @@
         "total_builder_fees": 0.0
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286189+00:00"
+      "last_updated": "2026-06-04T03:02:35.161990+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -33,7 +33,7 @@
         "total_builder_fees": 7497.3554
       },
       "rebates_paid": 4900.0,
-      "last_updated": "2026-06-04T02:36:05.286200+00:00"
+      "last_updated": "2026-06-04T03:02:35.162000+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
@@ -44,7 +44,7 @@
         "total_builder_fees": 74514.2432
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286209+00:00"
+      "last_updated": "2026-06-04T03:02:35.162009+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
@@ -55,7 +55,7 @@
         "total_builder_fees": 28584.782
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286217+00:00"
+      "last_updated": "2026-06-04T03:02:35.162018+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -66,7 +66,7 @@
         "total_builder_fees": 186.3024
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286225+00:00"
+      "last_updated": "2026-06-04T03:02:35.162027+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
@@ -77,7 +77,7 @@
         "total_builder_fees": 3067.7164
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286232+00:00"
+      "last_updated": "2026-06-04T03:02:35.162035+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -88,7 +88,7 @@
         "total_builder_fees": 26.5541
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286239+00:00"
+      "last_updated": "2026-06-04T03:02:35.162042+00:00"
     },
     {
       "address": "0xc36f2fe0f39a46a45c89bbF92D2531F7D1389062",
@@ -99,7 +99,7 @@
         "total_builder_fees": 37035.7977
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286246+00:00"
+      "last_updated": "2026-06-04T03:02:35.162050+00:00"
     },
     {
       "address": "0x171b7880939d76abbc6b6b2094f54e6636f829a7",
@@ -110,7 +110,7 @@
         "total_builder_fees": 2446.2037
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286253+00:00"
+      "last_updated": "2026-06-04T03:02:35.162057+00:00"
     },
     {
       "address": "0x82590d058ddb9b6d81cea05f0c500e981755bb0b",
@@ -121,7 +121,7 @@
         "total_builder_fees": 107.7618
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286261+00:00"
+      "last_updated": "2026-06-04T03:02:35.162065+00:00"
     },
     {
       "address": "0x1bc73b7556a79a3e6ee1a09044cb593b7663349b",
@@ -132,7 +132,7 @@
         "total_builder_fees": 1785.3097
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286268+00:00"
+      "last_updated": "2026-06-04T03:02:35.162072+00:00"
     },
     {
       "address": "0x955dfb921c6e481bf26225282720dba9196c3441",
@@ -143,7 +143,7 @@
         "total_builder_fees": 6504.0119
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286275+00:00"
+      "last_updated": "2026-06-04T03:02:35.162080+00:00"
     },
     {
       "address": "0x8be269D1F0731e7c2990558d2AF0D8A4A99D0eC4",
@@ -154,7 +154,7 @@
         "total_builder_fees": 2760.6799
       },
       "rebates_paid": 690.0,
-      "last_updated": "2026-06-04T02:36:05.286282+00:00"
+      "last_updated": "2026-06-04T03:02:35.162088+00:00"
     },
     {
       "address": "0x6ee5aee6c8148285f4d156b5b5732659c6f7bb4c",
@@ -165,7 +165,7 @@
         "total_builder_fees": 6401.3343
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286289+00:00"
+      "last_updated": "2026-06-04T03:02:35.162096+00:00"
     },
     {
       "address": "0x82211560d304a632820674b9fc98ab81e4a7d403",
@@ -176,7 +176,7 @@
         "total_builder_fees": 9480.1617
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286297+00:00"
+      "last_updated": "2026-06-04T03:02:35.162104+00:00"
     },
     {
       "address": "0x7104E77dcf3872DbE7868ecb321b8F72be92B9a1",
@@ -187,7 +187,7 @@
         "total_builder_fees": 120.8077
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286304+00:00"
+      "last_updated": "2026-06-04T03:02:35.162112+00:00"
     },
     {
       "address": "0x18e41bb2205e0d87ce94474411d49c035c15b062",
@@ -198,7 +198,7 @@
         "total_builder_fees": 8843.8097
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286311+00:00"
+      "last_updated": "2026-06-04T03:02:35.162119+00:00"
     },
     {
       "address": "0xe9683ec9a1c66fd9c394ccfed822a4de82b1792e",
@@ -209,7 +209,7 @@
         "total_builder_fees": 618.4322
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286318+00:00"
+      "last_updated": "2026-06-04T03:02:35.162127+00:00"
     },
     {
       "address": "0x97bff6e46d556ad271f2b1d048c9129cdcf03e2f",
@@ -220,7 +220,7 @@
         "total_builder_fees": 10898.5176
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286325+00:00"
+      "last_updated": "2026-06-04T03:02:35.162134+00:00"
     },
     {
       "address": "0xe49a765141e447864cd0f211811b93aac7d94901",
@@ -231,7 +231,7 @@
         "total_builder_fees": 1474.0073
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286332+00:00"
+      "last_updated": "2026-06-04T03:02:35.162141+00:00"
     },
     {
       "address": "0x17DfAEFF54c975ff8871944Da9CE2b10cdf4f184",
@@ -242,7 +242,7 @@
         "total_builder_fees": 4574.2735
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286338+00:00"
+      "last_updated": "2026-06-04T03:02:35.162149+00:00"
     },
     {
       "address": "0xc7ae23316b47f7e75f455f53ad37873a18351505",
@@ -253,7 +253,7 @@
         "total_builder_fees": 987.9751
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286345+00:00"
+      "last_updated": "2026-06-04T03:02:35.162156+00:00"
     },
     {
       "address": "0x8a561555BeBE4BfE57B598773304Ce935f9Eb80C",
@@ -264,7 +264,7 @@
         "total_builder_fees": 122.6686
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286352+00:00"
+      "last_updated": "2026-06-04T03:02:35.162163+00:00"
     },
     {
       "address": "0xC38a3879C4DcdAF97CecCa6cd3C19Fd6539A7aEd",
@@ -275,7 +275,7 @@
         "total_builder_fees": 1344.4628
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-04T02:36:05.286359+00:00"
+      "last_updated": "2026-06-04T03:02:35.162170+00:00"
     }
   ]
 }
