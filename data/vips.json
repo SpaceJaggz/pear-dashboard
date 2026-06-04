@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T08:35:06.802270+00:00",
+  "generated_at": "2026-06-04T02:36:05.286559+00:00",
   "count": 25,
   "data": [
     {
@@ -11,7 +11,7 @@
         "total_builder_fees": 1.4441
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801877+00:00"
+      "last_updated": "2026-06-04T02:36:05.286166+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -22,18 +22,18 @@
         "total_builder_fees": 0.0
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801898+00:00"
+      "last_updated": "2026-06-04T02:36:05.286189+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
       "name": "Wilko",
       "pear": {
-        "total_volume": 12403191.93,
-        "total_fees": 11492.4786,
-        "total_builder_fees": 7441.911
+        "total_volume": 12495599.23,
+        "total_fees": 11575.618,
+        "total_builder_fees": 7497.3554
       },
       "rebates_paid": 4900.0,
-      "last_updated": "2026-06-03T08:35:06.801909+00:00"
+      "last_updated": "2026-06-04T02:36:05.286200+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
@@ -44,18 +44,18 @@
         "total_builder_fees": 74514.2432
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801918+00:00"
+      "last_updated": "2026-06-04T02:36:05.286209+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
       "name": "Sendora Fulton/Full Send",
       "pear": {
-        "total_volume": 48738764.08,
-        "total_fees": 46027.4323,
-        "total_builder_fees": 28516.5095
+        "total_volume": 48852551.86,
+        "total_fees": 46138.636,
+        "total_builder_fees": 28584.782
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801926+00:00"
+      "last_updated": "2026-06-04T02:36:05.286217+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -66,18 +66,18 @@
         "total_builder_fees": 186.3024
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801934+00:00"
+      "last_updated": "2026-06-04T02:36:05.286225+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
       "name": "Wilko Ref 1",
       "pear": {
-        "total_volume": 5108105.77,
-        "total_fees": 5143.7002,
-        "total_builder_fees": 3045.2721
+        "total_volume": 5145512.92,
+        "total_fees": 5181.4964,
+        "total_builder_fees": 3067.7164
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801942+00:00"
+      "last_updated": "2026-06-04T02:36:05.286232+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -88,18 +88,18 @@
         "total_builder_fees": 26.5541
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801950+00:00"
+      "last_updated": "2026-06-04T02:36:05.286239+00:00"
     },
     {
       "address": "0xc36f2fe0f39a46a45c89bbF92D2531F7D1389062",
       "name": "Col3",
       "pear": {
-        "total_volume": 60812466.01,
-        "total_fees": 56707.0482,
-        "total_builder_fees": 36127.5684
+        "total_volume": 62326182.49,
+        "total_fees": 58088.5957,
+        "total_builder_fees": 37035.7977
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801958+00:00"
+      "last_updated": "2026-06-04T02:36:05.286246+00:00"
     },
     {
       "address": "0x171b7880939d76abbc6b6b2094f54e6636f829a7",
@@ -110,7 +110,7 @@
         "total_builder_fees": 2446.2037
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801965+00:00"
+      "last_updated": "2026-06-04T02:36:05.286253+00:00"
     },
     {
       "address": "0x82590d058ddb9b6d81cea05f0c500e981755bb0b",
@@ -121,7 +121,7 @@
         "total_builder_fees": 107.7618
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801973+00:00"
+      "last_updated": "2026-06-04T02:36:05.286261+00:00"
     },
     {
       "address": "0x1bc73b7556a79a3e6ee1a09044cb593b7663349b",
@@ -132,7 +132,7 @@
         "total_builder_fees": 1785.3097
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801981+00:00"
+      "last_updated": "2026-06-04T02:36:05.286268+00:00"
     },
     {
       "address": "0x955dfb921c6e481bf26225282720dba9196c3441",
@@ -143,18 +143,18 @@
         "total_builder_fees": 6504.0119
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.801988+00:00"
+      "last_updated": "2026-06-04T02:36:05.286275+00:00"
     },
     {
       "address": "0x8be269D1F0731e7c2990558d2AF0D8A4A99D0eC4",
       "name": "Thinker",
       "pear": {
-        "total_volume": 4288513.32,
-        "total_fees": 2993.9049,
-        "total_builder_fees": 2573.1069
+        "total_volume": 4601135.23,
+        "total_fees": 3296.2727,
+        "total_builder_fees": 2760.6799
       },
       "rebates_paid": 690.0,
-      "last_updated": "2026-06-03T08:35:06.801996+00:00"
+      "last_updated": "2026-06-04T02:36:05.286282+00:00"
     },
     {
       "address": "0x6ee5aee6c8148285f4d156b5b5732659c6f7bb4c",
@@ -165,18 +165,18 @@
         "total_builder_fees": 6401.3343
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802003+00:00"
+      "last_updated": "2026-06-04T02:36:05.286289+00:00"
     },
     {
       "address": "0x82211560d304a632820674b9fc98ab81e4a7d403",
       "name": "H2",
       "pear": {
-        "total_volume": 15356406.05,
-        "total_fees": 15861.8055,
-        "total_builder_fees": 9213.8391
+        "total_volume": 15800277.15,
+        "total_fees": 16319.8803,
+        "total_builder_fees": 9480.1617
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802011+00:00"
+      "last_updated": "2026-06-04T02:36:05.286297+00:00"
     },
     {
       "address": "0x7104E77dcf3872DbE7868ecb321b8F72be92B9a1",
@@ -187,18 +187,18 @@
         "total_builder_fees": 120.8077
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802018+00:00"
+      "last_updated": "2026-06-04T02:36:05.286304+00:00"
     },
     {
       "address": "0x18e41bb2205e0d87ce94474411d49c035c15b062",
       "name": "Red40 / flaustrian",
       "pear": {
-        "total_volume": 13871945.0,
-        "total_fees": 14042.2499,
-        "total_builder_fees": 8318.9471
+        "total_volume": 14746719.88,
+        "total_fees": 14917.1341,
+        "total_builder_fees": 8843.8097
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802026+00:00"
+      "last_updated": "2026-06-04T02:36:05.286311+00:00"
     },
     {
       "address": "0xe9683ec9a1c66fd9c394ccfed822a4de82b1792e",
@@ -209,51 +209,51 @@
         "total_builder_fees": 618.4322
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802034+00:00"
+      "last_updated": "2026-06-04T02:36:05.286318+00:00"
     },
     {
       "address": "0x97bff6e46d556ad271f2b1d048c9129cdcf03e2f",
       "name": "Unidentified Whale 7",
       "pear": {
-        "total_volume": 17155864.21,
-        "total_fees": 16773.9174,
-        "total_builder_fees": 10293.5139
+        "total_volume": 18164204.16,
+        "total_fees": 17731.8399,
+        "total_builder_fees": 10898.5176
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802041+00:00"
+      "last_updated": "2026-06-04T02:36:05.286325+00:00"
     },
     {
       "address": "0xe49a765141e447864cd0f211811b93aac7d94901",
       "name": "Pearsistent",
       "pear": {
-        "total_volume": 2511272.4,
-        "total_fees": 2540.0783,
-        "total_builder_fees": 1468.2247
+        "total_volume": 2520910.13,
+        "total_fees": 2550.0244,
+        "total_builder_fees": 1474.0073
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802049+00:00"
+      "last_updated": "2026-06-04T02:36:05.286332+00:00"
     },
     {
       "address": "0x17DfAEFF54c975ff8871944Da9CE2b10cdf4f184",
       "name": "CryptoCow",
       "pear": {
-        "total_volume": 7686648.59,
-        "total_fees": 7981.1146,
-        "total_builder_fees": 4555.8868
+        "total_volume": 7717293.06,
+        "total_fees": 8013.2913,
+        "total_builder_fees": 4574.2735
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802056+00:00"
+      "last_updated": "2026-06-04T02:36:05.286338+00:00"
     },
     {
       "address": "0xc7ae23316b47f7e75f455f53ad37873a18351505",
       "name": "Unidentified Whale 8",
       "pear": {
-        "total_volume": 1633482.98,
-        "total_fees": 1613.8448,
-        "total_builder_fees": 971.2813
+        "total_volume": 1661306.08,
+        "total_fees": 1642.5582,
+        "total_builder_fees": 987.9751
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802064+00:00"
+      "last_updated": "2026-06-04T02:36:05.286345+00:00"
     },
     {
       "address": "0x8a561555BeBE4BfE57B598773304Ce935f9Eb80C",
@@ -264,18 +264,18 @@
         "total_builder_fees": 122.6686
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802071+00:00"
+      "last_updated": "2026-06-04T02:36:05.286352+00:00"
     },
     {
       "address": "0xC38a3879C4DcdAF97CecCa6cd3C19Fd6539A7aEd",
       "name": "Jore",
       "pear": {
-        "total_volume": 2238294.99,
-        "total_fees": 2294.1874,
-        "total_builder_fees": 1342.9761
+        "total_volume": 2240772.71,
+        "total_fees": 2296.7444,
+        "total_builder_fees": 1344.4628
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-06-03T08:35:06.802078+00:00"
+      "last_updated": "2026-06-04T02:36:05.286359+00:00"
     }
   ]
 }
