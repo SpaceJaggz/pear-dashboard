@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T02:33:56.193849+00:00",
+  "generated_at": "2026-06-08T06:18:47.023431+00:00",
   "count": 28,
   "data": [
     {
@@ -13,10 +13,10 @@
       },
       "referral": {
         "total_referees": 21,
-        "total_referral_volume": 39041934.82,
+        "total_referral_volume": 39088944.52,
         "referral_fee_paid": 3400.0
       },
-      "last_updated": "2026-06-08T02:31:00.870227+00:00"
+      "last_updated": "2026-06-08T06:15:57.843620+00:00"
     },
     {
       "address": "0x2882Fc0C1cb1B997Bda58644540F731DFa00d85c",
@@ -32,7 +32,7 @@
         "total_referral_volume": 107892.57,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:05.629636+00:00"
+      "last_updated": "2026-06-08T06:16:02.261728+00:00"
     },
     {
       "address": "0x373418c5b99885ce346ef2b1745c855dd129aa84",
@@ -48,7 +48,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:07.024921+00:00"
+      "last_updated": "2026-06-08T06:16:03.576612+00:00"
     },
     {
       "address": "0xB9cDEEb253a659beC27122c7A6E4789b7CC418d7",
@@ -64,7 +64,7 @@
         "total_referral_volume": 23428424.64,
         "referral_fee_paid": 2200.0
       },
-      "last_updated": "2026-06-08T02:31:17.693273+00:00"
+      "last_updated": "2026-06-08T06:16:12.993362+00:00"
     },
     {
       "address": "0x2d87c160aedd8ffe2b5d24e460baf51f43ea61d1",
@@ -80,23 +80,23 @@
         "total_referral_volume": 236633.69,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:22.181674+00:00"
+      "last_updated": "2026-06-08T06:16:16.943923+00:00"
     },
     {
       "address": "0xb0431cB1f6E3f673BEeB902a91357a58582446A9",
       "name": "Lunartha",
       "refcode": "",
       "pear": {
-        "total_volume": 335356.67,
-        "total_fees": 324.5953,
-        "total_builder_fees": 199.4304
+        "total_volume": 336303.59,
+        "total_fees": 325.5725,
+        "total_builder_fees": 199.9985
       },
       "referral": {
         "total_referees": 3,
         "total_referral_volume": 7149.62,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:25.898116+00:00"
+      "last_updated": "2026-06-08T06:16:20.238005+00:00"
     },
     {
       "address": "0x5beF93fbe182Ece9776f255b05005b81305F90bf",
@@ -112,7 +112,7 @@
         "total_referral_volume": 4690529.49,
         "referral_fee_paid": 1000.0
       },
-      "last_updated": "2026-06-08T02:31:29.085499+00:00"
+      "last_updated": "2026-06-08T06:16:24.686113+00:00"
     },
     {
       "address": "0x6334546f6D6079d6276C8124389decF4C7A26d12",
@@ -128,7 +128,7 @@
         "total_referral_volume": 55828027.58,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:35.868444+00:00"
+      "last_updated": "2026-06-08T06:16:30.010186+00:00"
     },
     {
       "address": "0x35a6c3ff826406fb7a060c6a1f4896b910680ceb",
@@ -141,10 +141,10 @@
       },
       "referral": {
         "total_referees": 23,
-        "total_referral_volume": 1400336.9,
+        "total_referral_volume": 1401836.5,
         "referral_fee_paid": 100.0
       },
-      "last_updated": "2026-06-08T02:31:39.958837+00:00"
+      "last_updated": "2026-06-08T06:16:33.850556+00:00"
     },
     {
       "address": "0xd38c2a7f39acb6fc5c8c81803f883dc2e7ba6210",
@@ -160,7 +160,7 @@
         "total_referral_volume": 11191.88,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:41.879639+00:00"
+      "last_updated": "2026-06-08T06:16:35.655526+00:00"
     },
     {
       "address": "0x02689fb31aC9919820512164D007F8b757bd4E60",
@@ -176,7 +176,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:43.195796+00:00"
+      "last_updated": "2026-06-08T06:16:37.162752+00:00"
     },
     {
       "address": "0xf849FbC43f9a108A297c8730eEdE2896932fda68",
@@ -192,7 +192,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:44.520833+00:00"
+      "last_updated": "2026-06-08T06:16:38.470002+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -208,7 +208,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:46.005350+00:00"
+      "last_updated": "2026-06-08T06:16:39.968852+00:00"
     },
     {
       "address": "0xc89BC727d388bB74E9Db02BBc00c14e4dB27fd80",
@@ -224,7 +224,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:47.305590+00:00"
+      "last_updated": "2026-06-08T06:16:41.262384+00:00"
     },
     {
       "address": "0x087cdae4009af7974fb808cd4e01414ebf820ab0",
@@ -240,23 +240,23 @@
         "total_referral_volume": 56432.8,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:49.356827+00:00"
+      "last_updated": "2026-06-08T06:16:43.315570+00:00"
     },
     {
       "address": "0x14Afd469c7f42B1c4f8927F1bA4fE0484bcb4087",
       "name": "razor.hl",
       "refcode": "",
       "pear": {
-        "total_volume": 908095.17,
-        "total_fees": 866.4955,
-        "total_builder_fees": 544.8548
+        "total_volume": 912095.48,
+        "total_fees": 870.451,
+        "total_builder_fees": 547.255
       },
       "referral": {
         "total_referees": 1,
         "total_referral_volume": 8152.04,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:51.024697+00:00"
+      "last_updated": "2026-06-08T06:16:45.036888+00:00"
     },
     {
       "address": "0x337959a0a270493d2d596bdf1edeb8a9643be996",
@@ -272,7 +272,7 @@
         "total_referral_volume": 627038.01,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:53.805723+00:00"
+      "last_updated": "2026-06-08T06:16:47.837908+00:00"
     },
     {
       "address": "0xdf89d8A34Caa0673A403d9BfE239F7b199bb4A25",
@@ -288,7 +288,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:55.109659+00:00"
+      "last_updated": "2026-06-08T06:16:49.143221+00:00"
     },
     {
       "address": "0xf2cEc9b717150080C5b0924740F7f3c65f7cBAe7",
@@ -304,7 +304,7 @@
         "total_referral_volume": 50442.44,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:31:56.745140+00:00"
+      "last_updated": "2026-06-08T06:16:50.789821+00:00"
     },
     {
       "address": "0xA44E8B9522A5F710e2b63aB790465af2f155b632",
@@ -317,10 +317,10 @@
       },
       "referral": {
         "total_referees": 20,
-        "total_referral_volume": 14677636.17,
-        "referral_fee_paid": 980.0
+        "total_referral_volume": 14678433.93,
+        "referral_fee_paid": 1457.0
       },
-      "last_updated": "2026-06-08T02:32:00.552873+00:00"
+      "last_updated": "2026-06-08T06:16:54.990085+00:00"
     },
     {
       "address": "0x307538d1fF324E77E5eB202e5Aca37E0BAd359d6",
@@ -336,7 +336,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:32:01.863485+00:00"
+      "last_updated": "2026-06-08T06:16:56.307563+00:00"
     },
     {
       "address": "0x4b55D704C99891BAd4a7AC7b64f82Cef76eb0bfF",
@@ -352,7 +352,7 @@
         "total_referral_volume": 78919.34,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:32:04.997616+00:00"
+      "last_updated": "2026-06-08T06:16:58.177781+00:00"
     },
     {
       "address": "0x1C4F0Fc4F4929372510F3B23953793e6A39a99aB",
@@ -368,7 +368,7 @@
         "total_referral_volume": 585312.8,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:32:09.274450+00:00"
+      "last_updated": "2026-06-08T06:16:59.902160+00:00"
     },
     {
       "address": "0x93ccD418cfA3B9C5561Ae64b884C30d67BC25aA6",
@@ -384,7 +384,7 @@
         "total_referral_volume": 391020.41,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:32:14.099171+00:00"
+      "last_updated": "2026-06-08T06:17:04.038258+00:00"
     },
     {
       "address": "0x9502AF69eEBD0fb22EfAdBC5eF61e18c0FB1E32e",
@@ -400,7 +400,7 @@
         "total_referral_volume": 0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:33:50.294223+00:00"
+      "last_updated": "2026-06-08T06:18:41.075864+00:00"
     },
     {
       "address": "0xF8004B4b521C223e6cB704e8ddFB7f8Ae8344490",
@@ -416,23 +416,23 @@
         "total_referral_volume": 16919.84,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:33:53.399285+00:00"
+      "last_updated": "2026-06-08T06:18:44.366489+00:00"
     },
     {
       "address": "0x8a561555BeBE4BfE57B598773304Ce935f9Eb80C",
       "name": "EVA",
       "refcode": "",
       "pear": {
-        "total_volume": 204447.88,
-        "total_fees": 195.3995,
-        "total_builder_fees": 122.6686
+        "total_volume": 225477.0,
+        "total_fees": 217.1016,
+        "total_builder_fees": 135.2861
       },
       "referral": {
         "total_referees": 0,
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:33:54.710849+00:00"
+      "last_updated": "2026-06-08T06:18:45.690608+00:00"
     },
     {
       "address": "0x562deF389b186091c963F896433bA1103893A4C2",
@@ -448,7 +448,7 @@
         "total_referral_volume": 0.0,
         "referral_fee_paid": NaN
       },
-      "last_updated": "2026-06-08T02:33:56.193559+00:00"
+      "last_updated": "2026-06-08T06:18:47.023116+00:00"
     }
   ]
 }
