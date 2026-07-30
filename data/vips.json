@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T01:31:08.965950+00:00",
+  "generated_at": "2026-07-30T01:20:12.538965+00:00",
   "count": 25,
   "data": [
     {
@@ -11,7 +11,7 @@
         "total_builder_fees": 1.4441
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965573+00:00"
+      "last_updated": "2026-07-30T01:20:12.538596+00:00"
     },
     {
       "address": "0x7C930969FCF3e5a5c78bcF2e1cefda3f53E3C8FD",
@@ -22,7 +22,7 @@
         "total_builder_fees": 0.0
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965592+00:00"
+      "last_updated": "2026-07-30T01:20:12.538626+00:00"
     },
     {
       "address": "0xB8fb427A45C832c5dAc625aA7bfad720CA8C28A6",
@@ -33,18 +33,18 @@
         "total_builder_fees": 8340.7703
       },
       "rebates_paid": 6880.0,
-      "last_updated": "2026-07-29T01:31:08.965602+00:00"
+      "last_updated": "2026-07-30T01:20:12.538637+00:00"
     },
     {
       "address": "0xe6caf898d70a0f0365ae8c6211ade489025aa1bb",
       "name": "Cactus",
       "pear": {
-        "total_volume": 125013126.9,
-        "total_fees": 119112.4083,
-        "total_builder_fees": 74925.4424
+        "total_volume": 65280464.01,
+        "total_fees": 21794.3446,
+        "total_builder_fees": 39168.2465
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965611+00:00"
+      "last_updated": "2026-07-30T01:20:12.538645+00:00"
     },
     {
       "address": "0xc4B4D58b7c5838efe8034b28c5eB6B64E33CC189",
@@ -55,7 +55,7 @@
         "total_builder_fees": 31028.4267
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965618+00:00"
+      "last_updated": "2026-07-30T01:20:12.538653+00:00"
     },
     {
       "address": "0x98aBb17006aaA4f29F60cb8C9C3dB70B174EbA24",
@@ -66,7 +66,7 @@
         "total_builder_fees": 186.3024
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965624+00:00"
+      "last_updated": "2026-07-30T01:20:12.538661+00:00"
     },
     {
       "address": "0x2D87C160aedD8FfE2b5d24e460bAf51F43EA61D1",
@@ -77,7 +77,7 @@
         "total_builder_fees": 3099.5903
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965630+00:00"
+      "last_updated": "2026-07-30T01:20:12.538669+00:00"
     },
     {
       "address": "0x7bDCA5825c9B78Cab7672E91BDa91588b06322DB",
@@ -88,18 +88,18 @@
         "total_builder_fees": 26.5541
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965636+00:00"
+      "last_updated": "2026-07-30T01:20:12.538677+00:00"
     },
     {
       "address": "0xc36f2fe0f39a46a45c89bbF92D2531F7D1389062",
       "name": "Col3",
       "pear": {
-        "total_volume": 73533028.79,
-        "total_fees": 68356.4337,
-        "total_builder_fees": 43759.9032
+        "total_volume": 73652849.06,
+        "total_fees": 68456.9497,
+        "total_builder_fees": 43831.7953
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965642+00:00"
+      "last_updated": "2026-07-30T01:20:12.538685+00:00"
     },
     {
       "address": "0x171b7880939d76abbc6b6b2094f54e6636f829a7",
@@ -110,7 +110,7 @@
         "total_builder_fees": 2739.8614
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965647+00:00"
+      "last_updated": "2026-07-30T01:20:12.538692+00:00"
     },
     {
       "address": "0x82590d058ddb9b6d81cea05f0c500e981755bb0b",
@@ -121,7 +121,7 @@
         "total_builder_fees": 107.7618
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965653+00:00"
+      "last_updated": "2026-07-30T01:20:12.538699+00:00"
     },
     {
       "address": "0x1bc73b7556a79a3e6ee1a09044cb593b7663349b",
@@ -132,7 +132,7 @@
         "total_builder_fees": 1829.1202
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965658+00:00"
+      "last_updated": "2026-07-30T01:20:12.538706+00:00"
     },
     {
       "address": "0x955dfb921c6e481bf26225282720dba9196c3441",
@@ -143,7 +143,7 @@
         "total_builder_fees": 6504.0119
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965664+00:00"
+      "last_updated": "2026-07-30T01:20:12.538713+00:00"
     },
     {
       "address": "0x8be269D1F0731e7c2990558d2AF0D8A4A99D0eC4",
@@ -154,18 +154,18 @@
         "total_builder_fees": 3041.9507
       },
       "rebates_paid": 690.0,
-      "last_updated": "2026-07-29T01:31:08.965669+00:00"
+      "last_updated": "2026-07-30T01:20:12.538720+00:00"
     },
     {
       "address": "0x6ee5aee6c8148285f4d156b5b5732659c6f7bb4c",
       "name": "H1",
       "pear": {
-        "total_volume": 10775247.48,
-        "total_fees": 11040.3235,
-        "total_builder_fees": 6460.2341
+        "total_volume": 10781000.42,
+        "total_fees": 11045.9641,
+        "total_builder_fees": 6463.6858
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965674+00:00"
+      "last_updated": "2026-07-30T01:20:12.538728+00:00"
     },
     {
       "address": "0x82211560d304a632820674b9fc98ab81e4a7d403",
@@ -176,7 +176,7 @@
         "total_builder_fees": 10985.6371
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965679+00:00"
+      "last_updated": "2026-07-30T01:20:12.538735+00:00"
     },
     {
       "address": "0x7104E77dcf3872DbE7868ecb321b8F72be92B9a1",
@@ -187,7 +187,7 @@
         "total_builder_fees": 242.4971
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965698+00:00"
+      "last_updated": "2026-07-30T01:20:12.538742+00:00"
     },
     {
       "address": "0x18e41bb2205e0d87ce94474411d49c035c15b062",
@@ -198,7 +198,7 @@
         "total_builder_fees": 15646.3295
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965703+00:00"
+      "last_updated": "2026-07-30T01:20:12.538749+00:00"
     },
     {
       "address": "0xe9683ec9a1c66fd9c394ccfed822a4de82b1792e",
@@ -209,7 +209,7 @@
         "total_builder_fees": 618.4322
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965708+00:00"
+      "last_updated": "2026-07-30T01:20:12.538756+00:00"
     },
     {
       "address": "0x97bff6e46d556ad271f2b1d048c9129cdcf03e2f",
@@ -220,29 +220,29 @@
         "total_builder_fees": 15482.7309
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965713+00:00"
+      "last_updated": "2026-07-30T01:20:12.538763+00:00"
     },
     {
       "address": "0xe49a765141e447864cd0f211811b93aac7d94901",
       "name": "Pearsistent",
       "pear": {
-        "total_volume": 3109558.35,
-        "total_fees": 3140.0695,
-        "total_builder_fees": 1827.1956
+        "total_volume": 3112754.82,
+        "total_fees": 3143.2302,
+        "total_builder_fees": 1829.1135
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965718+00:00"
+      "last_updated": "2026-07-30T01:20:12.538770+00:00"
     },
     {
       "address": "0x17DfAEFF54c975ff8871944Da9CE2b10cdf4f184",
       "name": "CryptoCow",
       "pear": {
-        "total_volume": 9521145.12,
-        "total_fees": 9877.8254,
-        "total_builder_fees": 5656.5835
+        "total_volume": 9560905.28,
+        "total_fees": 9920.4881,
+        "total_builder_fees": 5680.4396
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965723+00:00"
+      "last_updated": "2026-07-30T01:20:12.538777+00:00"
     },
     {
       "address": "0xc7ae23316b47f7e75f455f53ad37873a18351505",
@@ -253,7 +253,7 @@
         "total_builder_fees": 1820.2969
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965728+00:00"
+      "last_updated": "2026-07-30T01:20:12.538784+00:00"
     },
     {
       "address": "0x8a561555BeBE4BfE57B598773304Ce935f9Eb80C",
@@ -264,7 +264,7 @@
         "total_builder_fees": 186.5049
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965732+00:00"
+      "last_updated": "2026-07-30T01:20:12.538791+00:00"
     },
     {
       "address": "0xC38a3879C4DcdAF97CecCa6cd3C19Fd6539A7aEd",
@@ -275,7 +275,7 @@
         "total_builder_fees": 1563.0155
       },
       "rebates_paid": NaN,
-      "last_updated": "2026-07-29T01:31:08.965737+00:00"
+      "last_updated": "2026-07-30T01:20:12.538798+00:00"
     }
   ]
 }
